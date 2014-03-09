@@ -1,0 +1,302 @@
+body {
+	font-family:  Arial, Helvetica, sans-serif;
+	width: 960px;
+	margin: auto;
+	background: url('../img/bg.jpg') no-repeat fixed #ababab;
+	background-size: 100%;
+}
+
+article {
+	margin: 60px 0px;
+	top: 0px;
+}
+
+div {
+	background: rgba(255,255,255, .96);
+	box-shadow: 0px 0px 25px 1px rgba(0,0,0, .3);
+}
+
+div:nth-of-type(2) {
+	margin: 100px 0px;
+}
+
+article div > h1, section {
+	animation:myfirst ease 1.6s;
+	-webkit-animation:myfirst ease 1.6s;
+}
+
+@keyframes myfirst {
+	0%   {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes myfirst {
+	0%   {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+/* intro */
+article div > h1{
+	padding: 80px 0px 30px 80px;
+	font-size: 24pt;
+}
+
+section {
+	padding: 0px 80px;
+	font-size: 14pt;
+}
+
+article div > section {
+	padding-bottom: 50px; 
+}
+
+article div > section:nth-child(2) p:first-child {
+	margin-bottom: 30px;
+}
+
+article div > section:nth-child(2) p:last-of-type {
+	margin-top: 30px;
+}
+/* end intro */
+
+p, ol, ul {
+	font-size: 14pt;
+}
+ul {
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+
+li {
+    padding: 12px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+li:last-child {
+	border-bottom: none;
+}
+
+a {
+	color: #F5424E;
+	-webkit-transition: color ease .5s; /* For Safari 3.1 to 6.0 */
+	transition: color ease .5s;
+}
+
+/* formulieren */
+/* eerste formulier */
+section:nth-of-type(2) form {
+	padding-bottom: 60px;
+}
+
+section:nth-of-type(2) form fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+section:nth-of-type(2) form fieldset:last-child {
+	margin-top: 40px;
+}
+
+section:nth-of-type(2) form fieldset legend {
+	width: 250px;
+	padding: 0px 550px 10px 0px;
+	border-bottom: 4px solid #EEA34A;
+	font-size: 16pt;
+}
+/* end eerste formulier */
+
+/* formulier 2 project */
+div:nth-of-type(2) section form {
+	padding: 70px 0px;
+}
+
+div:nth-of-type(2) section form fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div:nth-of-type(2) section form > fieldset > legend {
+	margin-bottom: 70px; 
+	padding: 10px 314px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-size: 28pt;
+	color: #868686;
+}
+
+div:nth-of-type(2) section form fieldset fieldset{
+	margin-top: 40px;
+}
+
+div:nth-of-type(2) section form fieldset fieldset legend {
+	width: 250px;
+	padding: 0px 550px 10px 0px;
+	border-bottom: 4px solid #EEA34A;
+	font-size: 16pt;
+}
+
+/* ik wil me aanmelden */
+article div:nth-of-type(2) section:nth-of-type(4) form fieldset:nth-child(2) label {
+	width: 240px;
+	margin-left: -70px;
+}
+
+/* project - project gegevens --- textarea's */
+article div:nth-of-type(2) section form fieldset:nth-child(2) textarea {
+	width: 240px;
+	margin-bottom: -10px;
+	margin-left: 80px;
+}
+
+/* project - project gegevens - geschikt voor  --- labels */
+article div:nth-of-type(2) section form fieldset:nth-child(3) label {
+	width: 240px;
+	margin-left: -74px;
+}
+/* end formulier 2 project*/
+
+/* formulier 3 stage */
+div:nth-of-type(3) section form {
+	padding: 70px 0px;
+}
+
+div:nth-of-type(3) section form fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div:nth-of-type(3) section form > fieldset > legend {
+	margin-bottom: 70px; 
+	padding: 10px 314px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 28pt;
+	color: #868686;
+}
+
+div:nth-of-type(3) section form fieldset fieldset{
+	margin-top: 40px;
+}
+
+div:nth-of-type(3) section form fieldset fieldset legend {
+	width: 250px;
+	padding: 0px 550px 10px 0px;
+	border-bottom: 4px solid #EEA34A;
+	font-size: 16pt;
+}
+
+/* stage - geschikt voor + tijdsduur stage --- labels */
+article div:nth-of-type(3) section form fieldset:nth-child(2) label:nth-of-type(2n+1) {
+	width: 240px;
+	margin-left: -70px;
+}
+
+/* stage - tijdsduur --- ul li label*/
+article div:nth-of-type(3) section form fieldset:nth-child(3) ul li label {
+	width: 240px;
+	margin-left: -88px;
+}
+
+/* stage - beschrijf werkzaamheden --- textarea */
+article div:nth-of-type(3) section form fieldset:nth-child(4) textarea {
+	width: 240px;
+	margin-bottom: -10px;
+	margin-left: 80px;
+	color: red;
+}
+/* end formulier 3 stage */
+
+form fieldset > textarea {
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+
+/* inputs, labels, tekstareas */
+label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;
+}
+
+input {
+	border: 0; 
+	padding:10px;
+	font-size: 14pt;
+	font-family:Arial, sans-serif; 
+	color: #aaa; 
+	border: 1px solid #ccc; 
+    width:220px; 
+	-webkit-transition: border ease .4s; /* For Safari 3.1 to 6.0 */
+	transition: border ease .4s;
+
+}
+
+textarea {
+	border: 0; 
+	padding: 10px; 
+	font-size: 14pt;
+	font-family:Arial, sans-serif; 
+	color: #aaa; 
+	border: 1px solid #ccc;  
+	width: 300px;
+	-webkit-transition: border ease .4s; /* For Safari 3.1 to 6.0 */
+	transition: border ease .4s;
+}
+
+button[type=submit] {
+	color: #2ecc71;
+	border: 2px solid #2ecc71;
+	background-color: rgba(0,0,0,0); 
+	padding: 15px 30px; 
+	margin: 110px 0px 0px 310px;
+	font-family: Arial, sans-serif; 
+	font-size: 16pt;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor:pointer;
+	-webkit-transition: border ease .4s, color ease .4s; /* For Safari 3.1 to 6.0 */
+	transition: border ease .4s, color ease .4s;
+}
+/* end inputs, labels, tekstareas */
+/* end formulieren */
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: #E0000F;
+}
+
+button[type=submit]:hover {
+	color: #24B562;
+	border: 2px solid #24B562;
+}
+
+input:focus, textarea:focus { 
+	outline: none;
+	border: 1px solid #EEA34A; 
+}
+
+video {
+	width: 640px;
+	height: 380px;
+	padding: 20px 0px;
+}

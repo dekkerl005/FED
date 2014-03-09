@@ -1,0 +1,148 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	width: 960px;
+	margin: auto;
+	background: url('../img/bg.jpg') no-repeat fixed #ababab;
+	background-size: 100%;
+}
+
+article {
+	margin: 60px 0px;
+	top: 0px;
+	background: rgba(255,255,255, .96);
+	box-shadow: 0px 0px 15px 1px #444;
+}
+
+article > h1, section {
+	animation:myfirst ease 1.6s;
+	-webkit-animation:myfirst ease 1.6s;
+}
+
+@keyframes myfirst {
+	0%   {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes myfirst {
+	0%   {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+
+article > h1:first-of-type{
+	padding: 80px 0px 50px 80px;
+	font-size: 24pt;
+}
+
+article > h1:hover {
+	background: url('../img/rainbow.gif') no-repeat 80% 20%;
+}
+
+article section:nth-of-type(3n+1) h1 {
+	padding: 0px 0px 10px 0px; 
+	font-size: 18pt;
+}
+
+article section:nth-child(3) h1 {
+	margin-bottom: -15px; 
+	font-size: 16pt;
+	color: #444;
+}
+
+article section:nth-child(4) h1 {
+	margin-top: 38px;
+	font-size: 16pt;
+	color: #444;
+}
+
+h2 {
+	font-size: 16pt;
+	color: #444;
+}
+
+h3 {
+	font-weight: normal;
+	margin-bottom:  -16px;
+}
+
+section {
+	padding: 0px 80px;
+}
+
+section:first-child {
+	padding-top: 30px;
+}
+section:last-child {
+	padding-bottom: 90px;
+}
+
+p, ol, h4 {
+	font-size: 14pt;
+}
+
+p {
+
+}
+
+article section:nth-child(3) p:nth-of-type(2n+2) {
+	margin: 40px -80px;
+	padding: 40px 80px;
+	color: #fff;
+	text-shadow: 1px 1px 1px 1px #000;
+	font-weight: 600;
+	background: url('../img/bg2.jpg');
+	-webkit-transition: padding ease 1s; /* For Safari 3.1 to 6.0 */
+	transition: padding ease 1s;
+}
+
+article section:nth-child(3) p:nth-of-type(2n+2):hover {
+	padding: 100px 80px;
+
+}
+
+article section:nth-child(3) p:nth-of-type(2n+2) a {
+	color: #A5DB70;
+	-webkit-transition: color ease 1s; /* For Safari 3.1 to 6.0 */
+	transition: color ease 1s;
+
+}
+
+article section:nth-child(3) p:nth-of-type(2n+2) a:hover {
+	color: #6AC412;
+}
+
+article section:last-child h1 {
+	margin-top: 80px;
+}
+
+a {
+	color: #F5424E;
+	-webkit-transition: color ease .5s; /* For Safari 3.1 to 6.0 */
+	transition: color ease .5s;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: #E0000F;
+}
+
+ol {
+	padding-left: 26px;
+}
+
+video {
+	width: 640px;
+	height: 380px;
+	padding: 20px 0px;
+}
