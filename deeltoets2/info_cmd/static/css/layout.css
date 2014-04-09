@@ -14,11 +14,11 @@ article {
 }
 
 article > h1, section {
-	animation:myfirst ease 1.6s;
-	-webkit-animation:myfirst ease 1.6s;
+	animation:mefirst ease 1.6s;
+	-webkit-animation:mefirst ease 1.6s;
 }
 
-@keyframes myfirst {
+@keyframes mefirst {
 	0%   {
 		opacity: 0;
 	}
@@ -27,7 +27,7 @@ article > h1, section {
 	}
 }
 
-@-webkit-keyframes myfirst {
+@-webkit-keyframes mefirst {
 	0%   {
 		opacity: 0;
 	}

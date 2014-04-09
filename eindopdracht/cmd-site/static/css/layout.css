@@ -1,0 +1,614 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	background: #f2eee7;
+	font-family: Arial, Helvetica, Verdana;
+	font-size: .875em;
+	line-height: 1.6em;
+	color: #333;
+}
+
+body > div > *:not(header) {
+	animation:mefirst ease 1.6s;
+	-webkit-animation:mefirst ease 1.6s;
+}
+body > div > div {
+	max-width: 70em;
+}
+
+body > div > div > div img {
+	display: none;
+	margin-top: 3.75em;
+}
+
+nav {
+	display: none;
+}
+
+header {
+	background: #34495e;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 2.5em;
+	height: 3.75em;
+	padding: 0 3.125em;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+header a {
+	background: center center no-repeat transparent;
+	/*background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );*/
+
+	display: block;
+	width: 2.5em;
+	height: 2.5em;
+	position: absolute;
+	top: 0;
+	right: .625em;
+}
+
+header a:first-of-type {
+	position: absolute;
+	float: left;
+	top: 0.6em;
+	left: 1.4em;
+	max-width: 100%;
+	width: 4.5em;
+} 
+
+header h1 {
+	color: #eee;
+	margin-top: .5em;
+	font-size: 1.4em;
+	display: inline-block;
+}
+
+/* Menu icon */
+header a > div {
+	margin: .703em .09em 0 0;
+	padding: 0.250em 0.438em 0.563em 0.438em;
+	background: rgba(0,0,0,0.0);
+	display: inline-block;
+	float: right;
+}
+
+header a div div {
+	background: #fff;
+	border-radius: 0.063em;
+	width: 1.9em;
+	height: 0.250em;
+	margin: 0.313em 0 0 0;
+}
+/* END Menu icon */
+
+/* article info CMD */
+article {
+	background: #fff;
+	max-width: 43.750em;
+}
+
+body article {
+	margin: 0 auto;
+	padding: 4.5em 2em 4em 2em;
+}
+
+article h1 {
+	font-size: 1.15em;
+}
+
+article h2 {
+	font-size: 1.1em;
+}
+
+article section p {
+	margin-bottom: 0.7em;
+}
+
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+/* END article info CMD */
+
+/* Extra toevoeging */
+aside {
+	background: #E7EBF2;
+	margin: 0 auto;
+	padding: 1em 2em 3.4em 2em;
+	max-width: 43.750em;
+}
+
+aside > section {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+aside > section > h1 {
+	padding: 1.3em 0em;
+	margin-bottom: 0em; 
+	background: #069bda;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+aside > section > h1 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+aside > section > section {
+	padding: 1em 2em;
+}
+
+aside > section > section:nth-of-type(odd) {
+	background: #fff;
+}
+
+aside > section > section:nth-of-type(even) {
+	background: #f2eee7;
+}
+
+
+footer {
+	background: #2c3e50;
+	background: #292929;
+	color: #fff;
+	margin-top: -1.4em; /*witruimte weg halen tussen blocks*/
+	padding: 2em 2em;
+	margin: 0 auto;
+}
+
+footer div {
+	margin-bottom: 2.5em; 
+	margin: 0 auto;
+	color: #ddd;
+	max-width: 43.750em;
+}
+
+footer h1 {
+	margin-bottom: -.6em ;
+	color: #fff;
+}
+
+/* === Footer Secion 1 === */
+footer section:first-of-type > ul {
+	list-style-type: none;
+}
+
+footer section:first-of-type > ul li  {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+footer section:first-of-type ul > li ul li:before  {
+	content: '> ';
+	color: #069bda;
+}
+
+footer section:first-of-type > ul > li > a {
+	color: #fff;
+	font-weight: 400;
+}
+
+footer section:first-of-type a {
+	text-decoration: none;
+	color: #ddd;
+}
+
+/* === Footer Secion 2 === */
+footer section:nth-of-type(2) h2 {
+	font-size: 1.2em;
+	font-weight: 800;
+	color: #ffab61;
+	margin: 1.5em 0 -.5em 0;
+}
+
+footer section:nth-of-type(2) ul li {
+	margin-top: .5em; 
+	list-style-type: none;
+}
+
+footer section:nth-of-type(2) ul {
+	margin-left: -2.8em; 
+}
+
+footer section:nth-of-type(2) span {
+	color: #ffe4cc;
+	font-weight: 600;
+}
+
+/* === Footer Secion 3 === */
+
+/* === Footer Secion 4 === */
+footer section:nth-of-type(4) h1 {
+	margin-bottom: .5em;
+}
+
+footer section:nth-of-type(4) form input:first-child {
+	background: #ffd;
+	color: #848484;
+	border: none;
+	border-radius: .2em;
+	padding: .8em 2em;
+	font-size: .875em;
+}
+
+footer section:nth-of-type(4) form input:last-child {
+	background: #ffab61;
+	color: #fff;
+	border: none;
+	border-radius: .2em;
+	padding: .8em 2em;
+	width: 9em;
+	font-size: .875em;
+}
+
+footer section:nth-of-type(4) form input:last-child:hover{
+	cursor: pointer;
+	background: #ef9a50;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* === Footer Secion 5 === */
+footer section:nth-of-type(5) {
+	border-top: .1em solid #4c4c4c;
+	border-bottom: .1em solid #4c4c4c;
+	padding-bottom: 1.5em;
+	margin-top: 4em ;
+	margin-bottom: 0em;
+	text-align: center; 
+}
+
+footer section:nth-of-type(5) p {
+	margin-bottom: 0em; 
+}
+
+footer section a:hover, footer section:first-of-type a:hover {
+	color: #069bda;
+}
+
+footer section a {
+	color: #069bda;
+}
+
+
+
+/* formulieren */
+/* eerste formulier */
+section:nth-of-type(2) form {
+	padding-bottom: 1em;
+}
+
+section:nth-of-type(2) form fieldset {
+	border: none;
+}
+
+section:nth-of-type(2) form fieldset legend {
+	max-width: 46.875em;
+	border-bottom: .2em solid #EEA34A;
+	font-size: 1.2em; 
+}
+/* end eerste formulier */
+
+/* formulier 2 project */
+div:nth-of-type(2) section form {
+	padding: 2em 0;
+}
+
+div:nth-of-type(2) section form fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div:nth-of-type(2) section form > fieldset > legend {
+	margin-bottom: 0em; 
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	color: #868686;
+}
+
+div:nth-of-type(2) section form fieldset fieldset{
+	margin-top: .5em;
+}
+
+div:nth-of-type(2) section form fieldset fieldset legend {
+	border-bottom: .2em solid #EEA34A;
+	font-size: 1.2em;
+}
+
+/* ik wil me aanmelden */
+article div section:nth-of-type(2) form fieldset:nth-child(2) label {
+	margin-left: -13em;
+}
+
+/* project - project gegevens --- textarea's */
+article div:nth-of-type(2) section form fieldset:nth-child(2) textarea {
+	width: 15em;
+	margin-left: 5%;
+}
+
+/* project - project gegevens - geschikt voor  --- labels */
+article div:nth-of-type(2) section form fieldset:nth-child(3) label {
+	width: 15em;
+	margin-left: -13em;
+}
+
+article div section form button {
+	border-radius: 0.250em;
+	margin: 0 auto;
+	margin-top: 3em;
+
+}
+/* end formulier 2 project*/
+
+/* formulier 3 stage */
+div:nth-of-type(3) section form {
+	padding: 2em 0;
+}
+
+div:nth-of-type(3) section form fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div:nth-of-type(3) section form > fieldset > legend {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 28pt;
+	color: #868686;
+}
+
+div:nth-of-type(3) section form fieldset fieldset{
+	margin-top: 2.5em;
+}
+
+div:nth-of-type(3) section form fieldset fieldset legend {
+	border-bottom: .25em solid #EEA34A;
+	font-size: 1.2em;
+}
+
+/* stage - geschikt voor + tijdsduur stage --- labels */
+article div:nth-of-type(3) section form fieldset:nth-child(2) label:nth-of-type(2n+1) {
+	width: 12em;
+	margin-left: -12em;
+}
+
+/* stage - tijdsduur --- ul li label*/
+article div:nth-of-type(3) section form fieldset:nth-child(3) ul li label {
+	width: 5em;
+	margin-left: -12em;
+}
+
+/* stage - beschrijf werkzaamheden --- textarea */
+article div:nth-of-type(3) section form fieldset:nth-child(4) textarea {
+	width: 15em;
+	margin-bottom: -.625em;
+	margin-left: 5em;
+}
+/* end formulier 3 stage */
+
+form fieldset > textarea {
+	margin-top: 1.25em;
+	margin-bottom: -1.25em;
+}
+
+/* inputs, labels, tekstareas */
+label {
+    width: 9.375em;
+    margin-top: .188em;
+    display:inline-block;
+    padding: .188em;
+}
+
+input {
+	border: 0; 
+	padding: 1em 2em;
+	font-size: inherit;
+	font-family:Arial, sans-serif; 
+	color: #aaa; 
+	border: .1em solid #ccc; 
+    width: 13.750em; 
+	-webkit-transition: border ease .4s; /* For Safari 3.1 to 6.0 */
+	transition: border ease .4s;
+
+}
+
+textarea {
+	border: 0; 
+	padding: 0.625em; 
+	font-size: inherit;
+	font-family:Arial, sans-serif; 
+	color: #aaa; 
+	border: .1em solid #ccc;  
+	width: 18.750em;
+	-webkit-transition: border ease .4s; /* For Safari 3.1 to 6.0 */
+	transition: border ease .4s;
+}
+
+form button[type=submit] {
+	background: #ffab61;
+	color: #fff;
+	border: none;
+	border-radius: 0.225em;
+	padding: 1em 2em;
+	font-size: .875em;
+	font-family: Arial, sans-serif; 
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor:pointer;
+	-webkit-transition: all ease .4s; /* For Safari 3.1 to 6.0 */
+	transition: all ease .4s;
+}
+/* end inputs, labels, tekstareas */
+/* end formulieren */
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: #E0000F;
+}
+
+form button[type=submit]:hover {
+	cursor: pointer;
+	background: #ef9a50;
+}
+
+input:focus, textarea:focus { 
+	outline: none;
+	border: .1em solid #EEA34A; 
+}
+
+
+
+
+
+
+
+
+
+/* ====== Responsive ====== */
+@media(min-width: 35em) {
+	body {
+		font-size: 1em;
+	}
+
+	footer section:nth-of-type(2) ul {
+		margin-left: -2.5em; 
+	}
+}
+
+/* 650px */
+@media(min-width: 40.625em) {
+	/* === Footer Sitemap row 1 === */
+	footer section:first-of-type > ul > li > li a {
+		color: #fff;
+		font-weight: 800;
+	}
+
+	footer section:first-of-type > ul > li {
+		vertical-align: top;
+		display: inline-block;
+		width: 49%;
+	}
+
+}
+
+/* 750px */
+@media(min-width: 46.875em) {
+	body {
+		margin: auto;
+	}
+
+	body article {
+		width: 46.875em;
+	}
+}
+
+/* 900px */
+@media(min-width: 56.250em) {
+	/* === Footer Section 2 & 3 === */
+	footer section:nth-of-type(2), footer section:nth-of-type(3) {
+		vertical-align: top;
+		display: inline-block;
+		width: 48%;	
+	}
+}
+
+/* 1120px */
+@media(min-width: 70.000em) {
+	body > div > div > div img {
+		display: inline;
+		margin-top: 5em;
+	}
+
+	body > div > div article {
+		margin-top: 1em;
+		margin-bottom: 1.2em;
+		padding: 2em 2em 2em 2em;
+	}
+
+	article {
+		background: #fff;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	aside > section {
+		max-width: 25em;
+		margin: 0 auto;
+		padding: none;
+	}
+
+	aside {
+		background: none;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 0 0 1em;
+		margin-top: -.3em;
+	}
+	
+	aside > section > section:nth-of-type(even) {
+		background: #E7EBF2;
+	}
+
+	body > div > div {
+		margin: 0 auto;
+	}
+
+	footer div {
+		max-width: 70em;
+	}
+
+	footer section:first-of-type > ul > li {
+		width: 24.6%;
+	}
+}
+
+.borderradius {
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.49);
+	-moz-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.49);
+	-o-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.49);
+	box-shadow:         3px 3px 10px 0px rgba(50, 50, 50, 0.49);
+}
+
+@keyframes mefirst {
+	0%   {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes mefirst {
+	0%   {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
